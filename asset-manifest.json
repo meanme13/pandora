@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/pandora/static/css/main.49e84856.css",
-    "main.js": "/pandora/static/js/main.0ceb1d42.js",
+    "main.js": "/pandora/static/js/main.22b9b986.js",
     "static/js/496.703b120c.chunk.js": "/pandora/static/js/496.703b120c.chunk.js",
     "static/media/Gill-Sans-Nova-Medium.otf": "/pandora/static/media/Gill-Sans-Nova-Medium.fcabe20cb1e0c15b7ebb.otf",
     "static/media/PanDisplay-Regular.otf": "/pandora/static/media/PanDisplay-Regular.2a55b6665ef0ba89e753.otf",
@@ -32,11 +32,11 @@
     "static/media/arrow-left.svg": "/pandora/static/media/arrow-left.afa033bca8c3afa7a963fc04b13b4284.svg",
     "static/media/arrow-right.svg": "/pandora/static/media/arrow-right.d44be37709716cc0726a38aebd64eb7f.svg",
     "main.49e84856.css.map": "/pandora/static/css/main.49e84856.css.map",
-    "main.0ceb1d42.js.map": "/pandora/static/js/main.0ceb1d42.js.map",
+    "main.22b9b986.js.map": "/pandora/static/js/main.22b9b986.js.map",
     "496.703b120c.chunk.js.map": "/pandora/static/js/496.703b120c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.49e84856.css",
-    "static/js/main.0ceb1d42.js"
+    "static/js/main.22b9b986.js"
   ]
 }
