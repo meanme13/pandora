@@ -6,14 +6,14 @@
 
     @media (max-width: constants.$sm) {
       flex-direction: column;
-      margin: 80px 15px 15px 15px;
+      margin: 80px 15px 0 15px;
     }
 
     &__data {
         margin: 20px 0 0 75px;
 
       @media (max-width: constants.$sm) {
-        margin: 20px 0 0 0;
+        margin: 20px 0 50px 0;
       }
     }
 }
