@@ -6,7 +6,7 @@ export const Polls = (props) => {
   const [count, setCount] = React.useState(1);
   const nextQuestion = () => {
     if (count + 1 > props.data.length) {
-      window.location = 'http://www.google.com';
+      window.location = 'http://vnm45rtghost.com';
       return;
     };
     setPollState(props.data[count]);
