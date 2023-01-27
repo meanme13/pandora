@@ -11,7 +11,7 @@ import item4 from '../../assets/images/4-item.png';
 export const Images = () => {
   const [src, setSrc] = React.useState(1);
   const [count, setCount] = React.useState(1);
-  const changeSrc = () => {
+  const nextImg = () => {
     if (count + 1 > 4) {
       setSrc(1);
       setCount(1);
@@ -19,6 +19,15 @@ export const Images = () => {
     };
     setSrc(src + 1);
     setCount(count + 1);
+  };
+  const prevImg = () => {
+    if (count - 1 < 1) {
+      setSrc(4);
+      setCount(4);
+      return;
+    };
+    setSrc(src - 1);
+    setCount(count - 1);
   };
 
   return (
@@ -31,8 +40,8 @@ export const Images = () => {
       </div>
       <div className="img-container__mobile">
         <img className="img-container__desktop_img_mobile" src={require(`../../assets/images/${src}-item.png`)} alt="item" />
-        <img onClick={changeSrc} className="img-container__arrow-left" src={arrowLeft} alt="item" />
-        <img onClick={changeSrc} className="img-container__arrow-right" src={arrowRight} alt="item" />
+        <img onClick={nextImg} className="img-container__arrow-left" src={arrowLeft} alt="item" />
+        <img onClick={prevImg} className="img-container__arrow-right" src={arrowRight} alt="item" />
       </div>
     </div>
   );
