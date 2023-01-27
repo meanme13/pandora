@@ -1,0 +1,19 @@
+@use '../styles/constants.scss';
+
+.card-container {
+    margin: 100px 58px 50px 58px;
+    display: flex;
+
+    @media (max-width: constants.$sm) {
+      flex-direction: column;
+      margin: 80px 15px 15px 15px;
+    }
+
+    &__data {
+        margin: 20px 0 0 75px;
+
+      @media (max-width: constants.$sm) {
+        margin: 20px 0 0 0;
+      }
+    }
+}

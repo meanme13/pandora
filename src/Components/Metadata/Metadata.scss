@@ -1,0 +1,75 @@
+@use '../styles/constants.scss';
+
+.data-container {
+  width: 301px;
+  height: 368px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: constants.$sm) {
+    width: 100%;
+    height: 287px;
+  }
+
+  &__item-name {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    color: constants.$bg-grey;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.125em;
+  }
+
+  &__title {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-lg;
+    color: constants.$bg-black;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+
+    @media (max-width: constants.$sm) {
+      font-size: 24px;
+      letter-spacing: 0.017em;
+      line-height: 18px;
+    }
+  }
+
+  &__price {
+
+  }
+
+  &__price-old {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.003em;
+    text-decoration-line: line-through;
+    color: constants.$bg-black;
+    margin-right: 7.5px;
+  }
+
+  &__price-new {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.003em;
+    color: #D2255B;
+    margin-left: 7.5px;
+  }
+
+  &__review {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.017em;
+    color: constants.$bg-black;
+  }
+}

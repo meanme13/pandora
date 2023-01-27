@@ -1,0 +1,79 @@
+@use '../styles/constants.scss';
+
+.polls-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 330px;
+  height: 167px;
+
+  @media (max-width: constants.$sm) {
+    width: 100%;
+  }
+
+  &__question-num {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-lg;
+    font-size: 14px;
+    line-height: 18px;
+    color: constants.$bg-black;
+  }
+
+  &__question {
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 14px;
+    line-height: 18px;
+    color: constants.$bg-black;
+
+    @media (max-width: constants.$sm) {
+      width: 100%;
+    }
+  }
+
+  &__btns {
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top: 2px solid constants.$bg-white;
+  }
+
+  &__yes {
+    width: 330px;
+    height: 45px;
+    background-color: constants.$bg-black;
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: constants.$bg-clear-white;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+    @media (max-width: constants.$sm) {
+      width: 100%;
+    }
+  }
+  
+  &__no {
+    width: 330px;
+    height: 45px;
+    background-color: constants.$bg-rose;
+    font-family: 'Pan Display';
+    font-weight: constants.$fw-sm;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: constants.$bg-black;
+    border-radius: 3px;
+
+    @media (max-width: constants.$sm) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@use '../styles/constants.scss';
+
+.img-container {
+
+  &__desktop {
+    width: 820px;
+    height: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media (max-width: constants.$sm) {
+      display: none;
+    }
+  }
+
+  &__desktop_img {
+    width: 400px;
+    height: 400px;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__mobile {
+    display: none;
+
+    @media (max-width: constants.$sm) {
+      display: block;
+    }
+  }
+
+  &__desktop_img_mobile {
+    width: 100%;
+  }
+}

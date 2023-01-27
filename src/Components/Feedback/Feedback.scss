@@ -1,0 +1,46 @@
+@use '../styles/constants.scss';
+
+.feed {
+  width: 37px;
+  height: 127px;
+  background-color: constants.$bg-clear-white;
+  border-radius: 3px 0px 0px 3px;
+  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: constants.$bg-grey;
+  position: fixed;
+  top: 280px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 150ms;
+
+  @media (max-width: constants.$sm) {
+    width: 30px;
+    height: 108px;
+    top: 323;
+  }
+
+  &:hover {
+    background-color: constants.$bg-black;
+  }
+  
+  &:hover &__text {
+    color: constants.$bg-clear-white;
+  }
+
+  &__text {
+    font-family: 'Pan Display';
+    font-style: normal;
+    font-weight: constants.$fw-sm;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: constants.$bg-black;
+    transform: rotate(90deg);
+    transition: 15ms;
+  }
+}

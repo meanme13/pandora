@@ -1,0 +1,129 @@
+@use "../styles/constants.scss";
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: constants.$bg-clear-white;
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: constants.$sm) {
+      display: none;
+    }
+  }
+
+  &__mobile {
+    display: none;
+    justify-content: space-between;
+
+    @media (max-width: constants.$sm) {
+      display: flex;
+    }
+  }
+
+  &__buttons {
+    height: 100%;
+    margin-right: 58px;
+    display: flex;
+  }
+
+  &__red-line {
+      width: 100%;
+      height: 5px;
+      background-color: constants.$bg-rose;
+  }
+
+  &__input_container {
+    width: 241px;
+    height: 41px;
+    margin: 14px 0 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid constants.$bg-white;
+
+    .input_container__icon {
+      width: 26px;
+      height: 26px;
+      margin: 0 8px 0 6px;
+    }
+
+    .input_container__text {
+      width: 100%;
+      font-family: 'Gill Sans Nova';
+      font-weight: 500;
+      font-size: 12px;
+      color: constants.$bg-grey;
+      line-height: 16px;
+      letter-spacing: 0.155em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    width: 143px;
+    height: 30px;
+    margin: 18px 0 22px 58px;
+  }
+
+  &__location {
+    width: 26px;
+    height: 26px;
+    margin: 22px 20px 22px 20px;
+  }
+  
+  &__user {
+    width: 26px;
+    height: 26px;
+    margin: 22px 20px 22px 0;
+  }
+  
+  &__basket {
+    width: 26px;
+    height: 26px;
+    margin: 22px 0 22px 0;
+  }
+
+  &__mobile_logo {
+    width: 122px;
+    height: 25px;
+    margin: 10px auto 25px auto;
+  }
+
+  &__mobile_basket {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 14px;
+    top: 15px;
+  }
+
+  &__mobile_search {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    right: 64px;
+    top: 14px;
+  }
+
+  &__mobile_burger {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 14px;
+    top: 14px;
+  }
+
+  &__mobile_user {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 53px;
+    top: 15px;
+  }
+}
